@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; script-src 'self'; connect-src https://*.supabase.co; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="light dark">
+<title>Emanet · Privacy Policy</title>
+<link rel="stylesheet" href="/emanet/style.css">
+
+</head>
+<body>
+<div class="wrap">
+<header>
+  <p class="brand">Emanet</p>
+  <h1 id="title">Privacy Policy</h1>
+  <p class="lede" id="lede"><span class="updated">Last updated: 24 September 2026 · Controller: Wipa Studios</span></p>
+  <nav><a href="/emanet/en/">Support</a><a href="/emanet/en/privacy.html" aria-current="page">Privacy</a><a href="/emanet/en/terms.html">Terms</a><a href="/emanet/">Türkçe</a></nav>
+</header>
+
+<p>This policy is written to satisfy both the GDPR and Turkey's KVKK. In one sentence: <strong>we can't see which apps you seal — technically, we can't.</strong> If you switch it on for a seal, only a label <strong>you type yourself</strong> travels with that request; nothing more.</p>
+<h2>1 · What we collect</h2>
+<div class="tablewrap"><table><thead><tr><th>Data</th><th>Why</th><th>How long</th></tr></thead><tbody><tr><td>Anonymous account ID</td><td>To link your circle and seal to you. No email, no password.</td><td>Until you delete the account</td></tr><tr><td>Circle and membership</td><td>To know who holds whose key</td><td>Until you delete the account</td></tr><tr><td>Your keeper hours and time zone <strong>(only if you set them)</strong></td><td>So requests reach you only during those hours; people in your circle see them</td><td>Until you change them or delete the account</td></tr><tr><td>Seal status and timing</td><td>So your keeper can see whether a seal is on and until when</td><td>Until the seal ends</td></tr><tr><td><strong>Request sentence</strong></td><td>So your keeper can decide. It is the main thing that describes a request.</td><td>26 weeks</td></tr><tr><td>App label — only if "Let your keeper see which app" is on for that seal</td><td>The label you type (e.g. "Instagram"); never read from iOS. If the setting is off, it is not stored even if sent.</td><td>26 weeks</td></tr><tr><td>Decisions and feedback</td><td>The keeper's trajectory is derived from them</td><td>26 weeks</td></tr><tr><td>Event log</td><td>To measure whether the product works; contains no app identifiers</td><td>26 weeks</td></tr><tr><td>Device push token (APNs)</td><td>To send notifications</td><td>Until the device changes</td></tr><tr><td>Purchase status</td><td>To know whether the subscription is valid. Our server verifies the App Store's signed transaction; the transaction ID is written to the event log</td><td>Status: until account deletion · transaction ID: 26 weeks</td></tr><tr><td>Failed invite-code attempts (IP address or anonymous account ID)</td><td>To stop invite codes being guessed</td><td>1 day</td></tr><tr><td>Sign in with Apple email <strong>(only if you use recovery)</strong></td><td>To restore your account on a new device</td><td>Until you delete the account</td></tr></tbody></table></div>
+<h2>2 · What we don't collect</h2>
+<ul><li><strong>Which apps you seal.</strong> Apple's Screen Time framework gives us anonymous markers, not app names. Those markers <strong>never leave your device</strong>; our server has no counterpart. We <strong>never</strong> read app names from iOS. If you <strong>choose</strong> to turn on "Let your keeper see which app" for a seal, only the label you type is sent with that request — off by default, and you can switch it off any time.</li><li><strong>How long you use them.</strong> Emanet neither shows nor measures usage time.</li><li><strong>Which websites you open.</strong></li><li><strong>Your location, contacts or photos.</strong></li><li><strong>Advertising identifiers.</strong> Emanet does <strong>no tracking</strong>, so the App Tracking Transparency prompt never appears.</li></ul>
+<div class="box"><p>If our server leaked, what could be learned: who is paired with whom, when seals were set, and <strong>what was written</strong> — plus the labels you chose to type. How long you use your phone, which sites you open, the list of apps iOS knows — <strong>none of it</strong>.</p></div>
+<h2>3 · Where it lives</h2>
+<p>Database, authentication and files run on <strong>Supabase</strong> in <strong><code>eu-central-1</code> (Frankfurt, Germany)</strong>. Backups stay in the same region.</p>
+<p><strong>One exception worth stating:</strong> the serverless functions ("Edge Functions") that send notifications and handle subscription events run on Supabase's global edge network, <strong>which may include nodes outside the EU</strong>. They store nothing; they process and forward to Apple's notification service.</p>
+<p>Notifications go through the <strong>Apple Push Notification service</strong> (Apple Inc.). Subscriptions are verified <strong>on our own server</strong> using the App Store's signed transaction; we use no third-party subscription service.</p>
+<p>These pages and invite links are published on <strong>GitHub Pages</strong> (<code>wipastudio.github.io/emanet</code>, GitHub Inc., USA). The pages use no cookies and contain no analytics or tracking code. The invite page asks our server about the code in the link so it can show the inviter's name; GitHub may keep standard server logs (IP address) when serving the page.</p>
+<h2>4 · Legal basis (GDPR Art. 6)</h2>
+<ul><li>Circle, seal, request, decision: <strong>performance of a contract</strong> (6(1)(b)).</li><li>Event log and product measurement: <strong>legitimate interest</strong> (6(1)(f)) — no personalised ads, no profiling.</li><li>IP log of failed invite attempts: <strong>legitimate interest</strong> (6(1)(f)) — preventing abuse; deleted after one day.</li><li>Sign in with Apple recovery: <strong>consent</strong> (6(1)(a)) — entirely optional.</li></ul>
+<h2>5 · Who we share with</h2>
+<p>We sell nothing. Only the providers that run the product:</p>
+<div class="tablewrap"><table><thead><tr><th>Provider</th><th>For</th><th>Where</th></tr></thead><tbody><tr><td>Supabase</td><td>Database, auth, serverless functions</td><td>EU (<code>eu-central-1</code>) + edge nodes</td></tr><tr><td>Apple</td><td>Notification delivery, purchases</td><td>USA / global</td></tr><tr><td>GitHub (Pages)</td><td>Hosting the support, legal and invite pages</td><td>USA / global</td></tr></tbody></table></div>
+<h2>6 · What the other person in your circle sees</h2>
+<p>Your keeper sees <strong>the sentence you write</strong>, how many minutes you asked for, until when your seal runs and whether it is working. If you turned on "Let your keeper see which app" for that seal, they also see <strong>the label you typed</strong> (e.g. "Deniz wants 20 minutes for Instagram"). Emergency unlocks never carry a label.</p>
+<p>Your keeper does <strong>not</strong> see: which app you want to open on seals where the label is off, how long you use your phone, or what you do at what time. There is no behaviour report, and there won't be.</p>
+<h2>7 · Your rights</h2>
+<p>You have the rights of access, rectification, erasure, restriction, objection and portability (GDPR Arts. 15–22; KVKK Art. 11).</p>
+<p><strong>Account deletion is in the app:</strong> Settings → Delete account. You leave the circle (the circle is deleted if nobody else is left), every seal is lifted and your data is <strong>permanently</strong> deleted; we don't soft-delete.</p>
+<p>Requests: <strong><a href="mailto:wipastudios@gmail.com">wipastudios@gmail.com</a></strong> · You may complain to your EU supervisory authority or Turkey's Personal Data Protection Authority.</p>
+<h2>8 · Children</h2>
+<p>Emanet is not directed at children under 13. It uses Screen Time in the <code>.individual</code> mode — <strong>an adult restricting themselves</strong> — and is not a parental-control product.</p>
+<h2>9 · Changes</h2>
+<p>If we change this policy we update the date and, for significant changes, tell you in the app.</p>
+<footer>Wipa Studios · <a href="mailto:wipastudios@gmail.com">wipastudios@gmail.com</a></footer>
+</div>
+</body>
+</html>
