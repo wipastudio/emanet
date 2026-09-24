@@ -28,6 +28,9 @@
 
   if (!tr) {
     document.documentElement.lang = "en";
+    var nav = document.querySelectorAll("nav a"), en = [["/emanet/en/", "Support"],
+      ["/emanet/en/privacy.html", "Privacy"], ["/emanet/en/terms.html", "Terms"], ["/emanet/", "Türkçe"]];
+    for (var i = 0; i < nav.length && i < en.length; i++) { nav[i].href = en[i][0]; nav[i].textContent = en[i][1]; }
     text("howTitle", "How it works");
     text("how1", "They seal their apps. To open one, they ask you in one sentence.");
     text("how2", "You answer “Yes” or “Not now” from your Lock Screen within 90 seconds.");
